@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src='../starter-kit/JSXTransformer.js'></script>
+	<script src='../starter-kit/react.js'></script>
+	<script src='../starter-kit/reflux.min.js'></script>
+	<script src='Actions.js'></script>
+	<script type='text/jsx' src='Stores.js'></script>
+	<script type='text/jsx' src='Components.js'></script>
+	<script type='text/jsx'>
+		Actions.loadData([
+	        "Apples",
+	        "Broccoli",
+	        "Chicken",
+	        "Duck",
+	        "Eggs",
+	        "Fish",
+	        "Granola",
+	        "Hash Browns"
+	    ]);
+		React.render(<FilteredList/>, document.getElementById('list'));
+	</script>
+</head>
+<body>
+	<div id='list'></div>
+</body>
+</html>
